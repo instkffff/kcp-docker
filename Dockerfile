@@ -11,7 +11,7 @@ RUN \
 
 COPY supervisord.conf /etc/supervisord.conf
 
-EXPOSE $KCP_PORT/udp
+EXPOSE 4000/udp
 
 ENTRYPOINT ["/usr/bin/supervisord"]
 
