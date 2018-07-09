@@ -11,8 +11,6 @@ RUN \
 
 COPY supervisord.conf /etc/supervisord.conf
 
-ENV KCP_PORT=9443 KCP_MODE=fast2 
-
 EXPOSE $KCP_PORT/udp
 
 ENTRYPOINT ["/usr/bin/supervisord"]
