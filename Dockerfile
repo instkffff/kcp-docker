@@ -9,7 +9,10 @@ RUN \
     && apk del .build-deps \
     && apk add --no-cache supervisor
 
-COPY supervisord.conf /etc/supervisord.conf
+COPY config.json /etc/config.json
+
+RUN   \
+     ./usr/local/bin/server_linux_amd64 -c /etc/config.json
 
 EXPOSE 4000/udp
 
