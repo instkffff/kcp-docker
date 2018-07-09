@@ -1,7 +1,5 @@
 # Shadowsocks Server with KCPTUN support Dockerfile
 
-FROM imhang/shadowsocks-docker
-
 ENV KCP_VER 20180316
 
 RUN \
