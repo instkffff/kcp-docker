@@ -1,6 +1,6 @@
 # Shadowsocks Server with KCPTUN support Dockerfile
 
-FROM imhang/shadowsocks-docker
+FROM instkffff/shadowsocks-docker
 
 ENV KCP_VER 20180316
 
