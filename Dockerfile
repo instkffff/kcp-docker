@@ -9,7 +9,7 @@ RUN \
     && apk del .build-deps \
     && apk add --no-cache supervisor
 
-COPY COPY supervisord.conf /etc/supervisord.conf
+COPY supervisord.conf /etc/supervisord.conf
 
 ENV KCP_PORT=9443 KCP_KEY=123456 KCP_CRYPT=none KCP_MODE=fast MTU=1400 SNDWND=512 RCVWND=128 DATASHARD=10 PARITYSHARD=0
 
