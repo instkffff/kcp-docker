@@ -1,6 +1,5 @@
 # Shadowsocks Server with KCPTUN support Dockerfile
 FROM alpine:3.7
-     iitgdocker/iperf-server
 
 ENV KCP_VER 20180316
 
